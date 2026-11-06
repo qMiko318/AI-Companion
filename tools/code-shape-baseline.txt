@@ -13,8 +13,8 @@ method src/main/java/dev/aicompanion/entity/CompanionHouse.java CompanionHouse.t
 method src/main/java/dev/aicompanion/entity/CompanionLoot.java CompanionLoot.tickChase() 83
 method src/main/java/dev/aicompanion/entity/CompanionStoneMining.java CompanionStoneMining.mine(ServerLevel) 246
 method src/main/java/dev/aicompanion/entity/CompanionWork.java CompanionWork.start(String,String,int,String) 144
-method src/main/java/dev/aicompanion/gametest/CompanionMemoryTests.java CompanionMemoryTests.forgetAllClearsMemoryButNotDeeds(GameTestHelper) 105
-method src/main/java/dev/aicompanion/gametest/CompanionMemoryTests.java CompanionMemoryTests.unfinishedCompressionReplyKeepsTheJournal(GameTestHelper) 82
+method src/main/java/dev/aicompanion/gametest/CompanionMemoryCompressionTests.java CompanionMemoryCompressionTests.forgetAllClearsMemoryButNotDeeds(GameTestHelper) 105
+method src/main/java/dev/aicompanion/gametest/CompanionMemoryCompressionTests.java CompanionMemoryCompressionTests.unfinishedCompressionReplyKeepsTheJournal(GameTestHelper) 82
 method src/main/java/dev/aicompanion/gametest/CompanionTasksRenderProbe.java CompanionTasksRenderProbe.tick(ClientTickEvent.Post) 107
 params src/main/java/dev/aicompanion/CompanionConversation.java CompanionConversation.takeObservation(int,long,long,boolean,boolean,int) 6
 params src/main/java/dev/aicompanion/CompanionConversation.java CompanionConversation.takeObservation(int,long,long,boolean,boolean,int,boolean) 7
@@ -78,8 +78,8 @@ params src/main/java/dev/aicompanion/gametest/CompanionPolygonTests.java Compani
 params src/main/java/dev/aicompanion/gametest/CompanionPortalTests.java CompanionPortalTests.leaveFor(GameTestHelper,Player,ServerLevel,double,double,double) 6
 params src/main/java/dev/aicompanion/gametest/CompanionSingleRouteTests.java CompanionSingleRouteTests.box(GameTestHelper,int,int,int,int,int,int,Block) 8
 params src/main/java/dev/aicompanion/gametest/CompanionTaskTests.java CompanionTaskTests.parkedTask(CompanionTaskQueue,String,long,AtomicBoolean,boolean,CompletableFuture<CompanionTaskQueue.Result>) 6
-params src/main/java/dev/aicompanion/gametest/CompanionWaterMiningTests.java CompanionWaterMiningTests.box(GameTestHelper,int,int,int,int,int,int,Block) 8
-params src/main/java/dev/aicompanion/gametest/MarathonArena.java MarathonArena.MarathonArena(GameTestHelper,int,int,int,int,int,int,int,int) 9
 params src/main/java/dev/aicompanion/gametest/MarathonTerrain.java MarathonTerrain.fill(int,int,int,int,int,int,BlockState) 7
 params src/main/java/dev/aicompanion/gametest/MarathonTerrain.java MarathonTerrain.fill(int,int,int,int,int,int,net.minecraft.world.level.block.Block) 7
-params src/main/java/dev/aicompanion/gametest/MarathonWatch.java MarathonWatch.MarathonWatch(GameTestHelper,CompanionEntity,ServerPlayer,int,int,int) 6
+params src/main/java/dev/aicompanion/gametest/support/MarathonArena.java MarathonArena.MarathonArena(GameTestHelper,int,int,int,int,int,int,int,int) 9
+params src/main/java/dev/aicompanion/gametest/support/MarathonWatch.java MarathonWatch.MarathonWatch(GameTestHelper,CompanionEntity,ServerPlayer,int,int,int) 6
+params src/main/java/dev/aicompanion/gametest/support/WaterMiningKit.java WaterMiningKit.box(GameTestHelper,int,int,int,int,int,int,Block) 8
