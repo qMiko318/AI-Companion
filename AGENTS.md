@@ -125,6 +125,10 @@
   (сетевой ответ, чтение файла, tick) и с вызовом `LOGGER` или `throw`; `tick` не глотает `Error`. Возврат
   с причиной вместо лога — исключение: запись в `tools/catch-baseline.txt` с правилом и причиной.
   Проверка `scripts/catch-check.sh`/`.ps1` запускается гейтом `scripts/gate.sh`/`gate.ps1`, если он есть.
+- `switch` по enum проекта — без `default`, все константы перечислены; новая константа обязана
+  ломать сборку или `scripts/switch-check`, а не молча попадать в `default`. Проверку запускают
+  `scripts/gate.sh`/`gate.ps1` (шаг `scripts/switch-check`, если он есть). Для enum Minecraft/NeoForge
+  и для `String` правило не действует; `switch` по вызову метода или `var` без `case` с константами не виден проверке.
 
 ## Проверка и передача результата
 
