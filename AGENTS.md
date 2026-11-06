@@ -127,6 +127,8 @@
 - Сборка: Windows `.\gradlew.bat build`; Linux/macOS `./gradlew build`.
 - Единая проверка перед PR: Windows `.\scripts\gate.ps1`, Linux/macOS `./scripts/gate.sh`: пустое дерево, `git diff --check`, проверки формы кода,
   сборка и GameTest без трёх длинных сценариев `endurance` (как `verify-fast`); полный `runGameTestServer` перед PR остаётся; в конце одна строка `GATE PASS` или `GATE FAIL: <шаг>`. `--fast` / `-Fast` пропускает GameTest — только для локальных итераций.
+- Предупреждения javac `unchecked` и `rawtypes` — ошибки компиляции (`-Werror` в `build.gradle`);
+  вместе с категориями javac по умолчанию; необязательные (`deprecation`, `removal`) не включены и видны только строкой `Note:`.
 - Игровые тесты: повседневно `.\scripts\verify-fast.ps1` на Windows и `./scripts/verify-fast.sh` на
   Linux/macOS (все тесты без трёх длинных
   сценариев `endurance`, в нескольких процессах); перед PR один раз полный `.\gradlew.bat runGameTestServer`
